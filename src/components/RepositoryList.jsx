@@ -3,12 +3,6 @@ import { RepositoryItem } from './RepositoryItem';
 
 import '../styles/components/c-repository.scss';
 
-const repository = {
-  name: 'Unform',
-  description: 'Form in React',
-  link: 'https://github.com/unform/unform',
-};
-
 export function RepositoryList() {
   const [repositories, setRepositories] = useState([]);
 
@@ -17,8 +11,6 @@ export function RepositoryList() {
       .then((response) => response.json())
       .then((data) => setRepositories(data));
   }, []);
-
-  console.log(repositories);
 
   return (
     <section className="c-repository">
