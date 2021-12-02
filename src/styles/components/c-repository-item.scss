@@ -1,0 +1,30 @@
+$component-name: 'c-repository-item';
+
+.#{$component-name} {
+  background-color: #202024;
+  padding: 1.5625rem;
+  margin-bottom: 1.25rem;
+  box-shadow: 0px 20px 50px -10px rgba(0, 0, 0, 0.05);
+  border-radius: 10px;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+
+  &__title {
+    display: block;
+    margin-bottom: 0.625rem;
+  }
+
+  &__description {
+    font-size: 0.875rem;
+    margin-bottom: 0.9375rem;
+  }
+
+  &__link {
+    display: inline-block;
+    text-decoration: none;
+    color: #8257e6;
+    font-size: 0.9375rem;
+  }
+}

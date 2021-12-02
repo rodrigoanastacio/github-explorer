@@ -1,5 +1,7 @@
 import { RepositoryItem } from './RepositoryItem';
 
+import '../styles/components/c-repository.scss';
+
 const repository = {
   name: 'Unform',
   description: 'Form in React',
@@ -8,9 +10,9 @@ const repository = {
 
 export function RepositoryList() {
   return (
-    <section className="repository">
-      <h1 className="repository__title">Listagem de repositórios</h1>
-      <ul className="repository__list">
+    <section className="c-repository">
+      <h1 className="c-repository__title">Listagem de repositórios</h1>
+      <ul className="c-repository__list">
         <RepositoryItem repository={repository} />
         <RepositoryItem />
         <RepositoryItem />

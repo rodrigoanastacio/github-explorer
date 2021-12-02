@@ -1,0 +1,11 @@
+$component-name: 'c-repository';
+
+.#{$component-name} {
+  &__title {
+    margin-bottom: 1.875rem;
+  }
+
+  &__list {
+    list-style: none;
+  }
+}
