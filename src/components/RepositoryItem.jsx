@@ -9,7 +9,11 @@ export function RepositoryItem({ repository }) {
       <p className="c-repository-item__description">
         {repository?.description}
       </p>
-      <a href={repository?.link} className="c-repository-item__link">
+      <a
+        target="_blank"
+        href={repository?.html_url}
+        className="c-repository-item__link"
+      >
         Acessar repositório
       </a>
     </li>
