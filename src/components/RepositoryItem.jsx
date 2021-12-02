@@ -3,7 +3,7 @@ import '../styles/components/c-repository-item.scss';
 export function RepositoryItem({ repository }) {
   return (
     <li className="c-repository-item">
-      <strong class="c-repository-item__title">
+      <strong className="c-repository-item__title">
         {repository?.name ?? 'Default'}
       </strong>
       <p className="c-repository-item__description">
